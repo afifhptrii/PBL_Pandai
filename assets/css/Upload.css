@@ -1,0 +1,199 @@
+
+
+/* Column Layout */
+.col-lg-8 {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+/* Box Styling */
+.box {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.box-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-header h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.box-header h3 strong {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #0E59F2;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input.form-control, textarea.form-control, select.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input.form-control:focus, textarea.form-control:focus, select.form-control:focus {
+    border-color: #0E59F2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(14, 89, 242, 0.2);
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* File Upload (Filepond) */
+.filepond--root {
+    width: 100%;
+    padding: 15px;
+    border: 1px dashed #0E59F2;
+    background-color: #fafafa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.filepond--root:hover {
+    border-color: #0D47A1;
+}
+
+.filepond--drop-label {
+    color: #0E59F2;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Checkbox Styles */
+.inp-cbx {
+    display: none;
+}
+
+.cbx.terms {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cbx.terms input:checked + label span svg {
+    stroke: #0E59F2;
+}
+
+.cbx.terms input:checked + label span {
+    color: #0E59F2;
+}
+
+.cbx.terms label span svg {
+    stroke: #ccc;
+    margin-right: 8px;
+    transition: stroke 0.3s ease;
+}
+
+/* Button Styles */
+.btn-form-func {
+    padding: 12px 25px;
+    background-color: #0E59F2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form-func:hover {
+    background-color: #084bb3;
+}
+
+.btn-form-func .icon {
+    margin-left: 10px;
+}
+
+.btn-form-func-content {
+    display: inline-block;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .col-lg-8 {
+        padding: 20px;
+    }
+
+    .box-header h3 {
+        font-size: 18px;
+    }
+
+    .box-header p {
+        font-size: 14px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .filepond--root {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col-lg-8 {
+        padding: 15px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .box-header h3 {
+        font-size: 16px;
+    }
+
+    .box-header p {
+        font-size: 14px;
+    }
+
+    .btn-form-func {
+        width: 100%;
+        padding: 15px;
+    }
+}
