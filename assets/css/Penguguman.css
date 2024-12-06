@@ -1,0 +1,87 @@
+/* Container */
+.status-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Progress Bar */
+  .progress-bars {
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: row; /* Memastikan elemen berada dalam satu baris */
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .progress-step {
+    text-align: center;
+    position: relative;
+    flex: 1; /* Membuat elemen sejajar dengan lebar yang sama */
+  }
+  
+  .progress-step p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Circle */
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    border: 2px solid #ccc; /* Menambahkan border agar lebih jelas */
+  }
+  
+  /* Status Styles */
+  .completed .circle {
+    background-color: #4CAF50;
+  }
+  
+  .active .circle {
+    background-color: #FF9800;
+  }
+  
+  .rejected .circle {
+    background-color: #F44336;
+  }
+  
+  .completed p {
+    color: #4CAF50;
+  }
+  
+  .active p {
+    color: #FF9800;
+  }
+  
+  .rejected p {
+    color: #F44336;
+  }
+  
+  /* Comment Section */
+  .comment-section {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+  }
+  
